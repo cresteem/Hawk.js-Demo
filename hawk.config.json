@@ -1,0 +1,14 @@
+{
+  "lookupPatterns": [
+    "**/*.html",
+    "**/*.htm"
+  ],
+  "ignorePattern": [
+    "node_modules/**"
+  ],
+  "timeZone": "Asia/Kolkata",
+  "domainName": "www.example.com",
+  "sitemapPath": "sitemap.xml",
+  "robotPath": "robot.txt",
+  "secretFile": "secrets.json"
+}

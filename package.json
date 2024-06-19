@@ -1,0 +1,12 @@
+{
+  "name": "hawk-js-demo",
+  "version": "1.0.0",
+  "description": "Demo of Hawk JS",
+  "repository": "https://github.com/cresteem/Hawk-JS-Demo.git",
+  "author": "iamspdarsan <iamspdarsan@gmail.com>",
+  "license": "GPL-3.0",
+  "private": false,
+  "dependencies": {
+    "@cresteem/hawk-js": "latest"
+  }
+}
