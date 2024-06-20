@@ -10,5 +10,5 @@
   "domainName": "www.example.com",
   "sitemapPath": "sitemap.xml",
   "robotPath": "robot.txt",
-  "secretFile": "secrets.json"
+  "secretFile": "secret.json"
 }
