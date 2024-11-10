@@ -8,5 +8,7 @@
   "private": false,
   "dependencies": {
     "@cresteem/hawk-js": "^1.0.4"
-  }
+  },
+  "homepage": "https://hawkjs.cresteem.com/",
+  "keywords": []
 }
