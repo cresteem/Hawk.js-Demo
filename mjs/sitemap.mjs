@@ -1,19 +1,23 @@
-import { utilities } from "@cresteem/hawk-js";
+import { Hawk } from "@cresteem/hawk-js";
 
-const includePattern = [];
+const hawk = new Hawk();
+
+const includePattern = ["**/*.html"];
 const excludePattern = [];
 
 const pretty = true;
+const upload = true;
+/* Make site map and upload to FTP server */
+hawk.utils
+  .makeSitemap(includePattern, excludePattern, pretty, upload)
+  .then(console.log)
+  .catch(console.error);
 
-/* Make site map and upload to server */
-utilities.makeSitemap(pretty, includePattern, excludePattern);
-
-/* Make site map and dont upload to ftp server */
-const dontUpload = true;
-utilities.makeSitemap(pretty, includePattern, excludePattern, dontUpload);
+/* Make site map only */
+hawk.utils
+  .makeSitemap(includePattern, excludePattern, pretty)
+  .then(console.log)
+  .catch(console.error);
 
 /* Make robot.txt only */
-utilities.makeRobot();
-
-/* Make site map and robot */
-utilities._makeSitemapRobot(pretty, includePattern, excludePattern);
+hawk.utils.makeRobot();

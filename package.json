@@ -6,9 +6,10 @@
   "author": "iamspdarsan <iamspdarsan@gmail.com>",
   "license": "GPL-3.0",
   "private": false,
-  "dependencies": {
-    "@cresteem/hawk-js": "^1.0.4"
-  },
+  "dependencies": {},
   "homepage": "https://hawkjs.cresteem.com/",
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "@cresteem/hawk-js": "^1.5.1"
+  }
 }
